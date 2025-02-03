@@ -1,5 +1,7 @@
 # scGPT-GBM-classifier
 
+![scgpt pipeline (5)](https://github.com/user-attachments/assets/a3f6e42f-ef1c-4d89-b826-120cc8148ee0)
+
 This repository contains two folders (final_analysis & testing_examples) using Richards 2021 data and Neftel 2019 data, respectively. Inside each folder, you will find two Jupyter notebooks for analyzing glioblastoma data using scGPT. 
 
 The workflow is as follows:
