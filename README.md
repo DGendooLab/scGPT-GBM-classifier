@@ -26,18 +26,18 @@ The workflow is as follows:
 
 ## Requirements
 
-- **Runtime**  
+**Runtime**  
   We recommend Google Colab with a runtime that supports Python ≤3.10. For best performance:
   - Use **L4** GPUs (or A100 for faster embedding tasks) with Google Colab Pro.
   - If using the free version (T4 GPU), follow the instructions in the testing_examples notebooks.
 
-- **Python Version**  
-  The notebooks are designed for Python 3.10.12.  
-  **IMPORTANT:** In Colab, set your runtime to "fallback" to Python 3.10 if you see Python 3.11 was loaded.
+**Python Version**  
+  - The notebooks are designed for Python 3.10.12.  
+  - **IMPORTANT:** In Colab, set your runtime to "fallback" to Python 3.10 if you see Python 3.11 was loaded.
 
-- **Dependencies**  
-  The notebooks install and upgrade packages such as `scgpt`, `wandb`, `faiss-gpu`, `scanpy`, `torch`, among others.  
-  For the full list for reproducibility, see the last cell of each notebook (i.e., `pip freeze`).
+**Dependencies**  
+  - The notebooks install and upgrade packages such as `scgpt`, `wandb`, `faiss-gpu`, `scanpy`, `torch`, among others.  
+  - For the full list for reproducibility, see the last cell of each notebook (i.e., `pip freeze`).
 
 ---
 
@@ -63,26 +63,33 @@ The workflow is as follows:
 
 ## External Data Sources
 
-- **GBmap Datasets**  
-  GBmap data was downloaded via [CELLxGENE](https://cellxgene.cziscience.com/collections/999f2a15-3d7e-440b-96ae-2c806799c08c). Included in this analysis is the "Core" GBmap atlas. Read more: [GBmap Pre-print](https://doi.org/10.1101/2022.08.27.505439).
+**GBmap Datasets**  
+  - GBmap data was downloaded via [CELLxGENE](https://cellxgene.cziscience.com/collections/999f2a15-3d7e-440b-96ae-2c806799c08c).
+  - Included in this analysis is the "Core" GBmap atlas.
+  - Read more: [GBmap Pre-print](https://doi.org/10.1101/2022.08.27.505439).
   
-- **Neftel 2019 Datasets**  
-  Neftel 2019 data is available via [Broad Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP393). Data for this analysis was filtered from the original GBmap data. Read more: [Neftel 2019 Cell Publication](https://doi.org/10.1016/j.cell.2019.06.024).
+**Neftel 2019 Datasets**  
+  - Neftel 2019 data is available via [Broad Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP393).
+  - Data for this analysis was filtered from the original GBmap data.
+  - Read more: [Neftel 2019 Cell Publication](https://doi.org/10.1016/j.cell.2019.06.024).
 
-- **Richards 2021 Dataset**  
-  Richards 2019 data was downloaded and available via [CReSCENT](https://crescent.cloud) and [Broad Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP503). Richards tumour data for this analysis was filtered from the original GBmap data and GSC data (glioblastoma stem cells) from CReSCENT. Read more: [Richards 2021 Nature Cancer Publication](https://doi.org/10.1038/s43018-020-00154-9).
+**Richards 2021 Dataset**  
+  - Richards 2019 data was downloaded and available via [CReSCENT](https://crescent.cloud) and [Broad Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP503).
+  - Richards tumour data for this analysis was filtered from the original GBmap data and GSC data (glioblastoma stem cells) from CReSCENT.
+  - Read more: [Richards 2021 Nature Cancer Publication](https://doi.org/10.1038/s43018-020-00154-9).
 ---
 
 ## Additional Notes
 
-- **FAISS Installation**  
-  The first notebook checks for `faiss` installation for fast similarity search. If it is not installed, you can follow the [FAISS installation guide](https://github.com/facebookresearch/faiss/wiki/Installing-Faiss).
+**FAISS Installation**  
+  - The first notebook checks for `faiss` installation for fast similarity search. If it is not installed, you can follow the [FAISS installation guide](https://github.com/facebookresearch/faiss/wiki/Installing-Faiss).
 
-- **Customization**  
-  You can modify cell type keys (`annotation_level_3` or `cell_type`) and other parameters (like the number of nearest neighbors `k`) to suit your analysis.
+**Customization**  
+  - You can modify cell type keys (`annotation_level_3` or `cell_type`) and other parameters (like the number of nearest neighbors `k`) to suit your analysis.
 
-- **scGPT**  
-  This repository is based on the [scGPT GitHub tutorial](https://github.com/bowang-lab/scGPT/blob/main/tutorials/zero-shot/Tutorial_ZeroShot_Reference_Mapping.ipynb). Read more: [scGPT 2024 Nature Methods Publication](https://doi.org/10.1038/s41592-024-02201-0).
+**scGPT**  
+  - This repository is based on the [scGPT GitHub tutorial](https://github.com/bowang-lab/scGPT/blob/main/tutorials/zero-shot/Tutorial_ZeroShot_Reference_Mapping.ipynb). Read more: [scGPT 2024 Nature Methods Publication](https://doi.org/10.1038/s41592-024-02201-0).
 
-- **Contact**  
-  If you run into any problems, please contact Suluxan Mohanraj or leave a GitHub issue in this repository!
+---
+## Contact
+If you run into any problems, please contact Suluxan Mohanraj or leave a GitHub issue in this repository!
